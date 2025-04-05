@@ -10,7 +10,7 @@
 
 ## 라이선스
 
-## 주요기능
+## 주요 기능
 ### 1. VCS
 ### 2. Issue Management
 ### 3. Actions

@@ -13,6 +13,63 @@
 ## 주요 기능
 ### 1. VCS
 ### 2. Issue Management
+GitHub의 Issue Management 기능은 프로젝트 관리와 협업을 원활하게 해주기 위한 기능이다.  
+개발 중인 프로젝트의 새로운 기능을 제안하거나, 버그를 신고하는 등의 목적으로 사용되며. 이 때, 작업 단위로 개발 내용을 설명하고, 우선 순위를 정하고, 담당자를 지정하여 프로젝트의 개발 과정을 체계적으로 관리할 수 있다.
+
+**Issue 작성**
+
+Issue 자체는 제목과 본문으로 작성되며, MarkDown 문법을 지원하여 readme.md와 같은 md 확장자 파일과 동일한 방식으로 유저 친화적으로 내용을 작성할 수 있다.  
+Issue 제목과 본문 작성 이외에도 해당 작업을 누가 처리할지 담당자를 지정할 수 있고, 이슈의 성격에 따라  `bug`, `feature`, `question`, `refactor`, `chore` 같은 Label을 통해 Issue의 종류를 한눈에 파악할 수 있다.  
+또한, Label의 경우 Github Repository 생성시 자동으로 생성되지만, 이를 삭제, 수정, 추가하여 Issue 및 Pull Request에 사용할 Label을 자유롭게 커스터마이징하여 사용할 수 있다.  
+
+**Issue Template**
+
+자주 사용하는 `버그 리포트`, `새로운 기능 제안`과 같은 Issue 유형에 대해 Issue Template를 만들어두면, Issue 작성 시 일관된 형식으로 작성하고 정보를 받을 수 있어 개발 생산성이 향상된다.  
+Issue Template은 .github/ISSUE_TEMPLATE 디렉토리에 위치하며, template_name.md 파일 형식으로 작성된다.
+
+**Issue Template 작성 예시**
+
+```yaml
+issueTemplate1.md
+---
+name: 새로운 기능 제안
+about: 기능 제안 이슈 생성
+title: ''
+labels: ''
+assignees: ''
+---
+
+## 이슈의 제목
+
+### 구현할 사항 
+
+### 구현 이유
+
+### 레퍼런스
+```
+
+**Issue와 Milestone**
+
+Github에서는 여러 개의 비슷한 속성을 가진 Issue를 하나의 목표로 묶기 위해 Milestone 기능을 사용할 수 있다.  
+예를 들어 `v1.0 Launching`라는 Milestone에 관련 Issue들을 모아두면, 버전 단위로 Issue를 관리하는 방식이 되어 얼마나 작업이 진행되었는지 시각적으로 확인할 수 있어 유용하다.  
+또한, 프로젝트 보드 기능과 연동하면 칸반 보드 형태로 Issue들을 `Todo`, `In Progress`, `Done` 등의 상태로 이동시키며 관리할 수 있어 협업 시 매우 직관적으로 개발 과정을 파악할 수 있다.  
+
+**Issue 보드 예시**
+
+![image](https://github.com/user-attachments/assets/74bb69a8-d6b4-4573-8cc9-f7e578a90189)
+
+**Issue와 Pull Request ( PR )**
+
+Issue는 `Pull Request`와도 긴밀하게 연결되어 있다.  
+우선, Issue와 Pull Request는 자동 생성되는 Issue 번호를 공유한다. 예를 들어 `Issue #4` 이후 Pull Request를 생성하면 해당 Pull Reqeust의 Issue 넘버링은 `#5`가 된다.  
+또한, Issue의 생명 주기는 Pull Request의 Merge와 깊은 연관이 있다. 예를 들어 Pull Request 제목을 `Fix : #12~`처럼 작성하면 해당 Pull Request이 Merge되었을 때 자동으로 `Issue #12`가 닫히게 된다.   
+보통 이런 방식으로 하나의 Issue를 담당하는 하나의 PR이 매칭되는 방식으로 Contributing이 진행된다.  
+또한, Pull Request의 가장 큰 이점 중 하나는 코드 리뷰와 댓글을 통한 커뮤니케이션에 있다고 할 수 있는데, Issue에도 Pull Request와 같이 자유롭게 댓글을 달 수 있고, 팀원들과 논의하며 작업 방향을 결정할 수 있어 Issue 역시 커뮤니케이션 도구로도 사용될 수 있다.  
+
+**정리**
+
+이처럼 GitHub의 `Issue Management`는 새로운 기능이나 버그에 대한 안내 이외에도, 팀의 협업과 일정 관리를 돕는 강력한 도구로 활용할 수 있다.  
+
 ### 3. Actions
 GitHub Actions는 GitHub에서 제공하는 CI/CD(지속적 통합 및 지속적 배포) 도구로, 리포지토리의 이벤트를 트리거로 하여 자동화된 워크플로우를 실행할 수 있게 해준다.  
 코드가 특정 브랜치에 push 되었을 때 빌드 및 배포를 자동화하거나, PR이 생성되었을 때 테스트를 실행하고 리포트를 코멘트로 올리는 등의 작업을 할 수 있다. 

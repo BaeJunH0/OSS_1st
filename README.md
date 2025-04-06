@@ -164,6 +164,8 @@ GitHub Copilot은 개발자가 코드를 더 빠르고 효율적으로 작성할
 
 이 도구는 Visual Studio Code, JetBrains IDE, Neovim 등 주요 개발 환경에 플러그인 형태로 설치할 수 있으며, 다양한 언어와 프레임워크를 지원한다. 특히 Python, JavaScript, TypeScript, Java, Go, C++ 등 폭넓은 언어군을 대상으로 자연스럽고 직관적인 코드 추천을 제공한다.
 
+Copilot은 다음과 같은 주요 기능을 한다.
+- 문맥 기반 코드 자동완성 :
 
 ### 5. Packages
 

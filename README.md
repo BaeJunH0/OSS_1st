@@ -7,6 +7,11 @@
 - 전자공학부/2021110253/차민성/miinscar
 
 ## 개요
+**Github**는 Git Repository Hosting을 지원하는 Ruby On Rails로 작성된 Web Service이다.
+
+현재 가장 인기 있는 Git Repository Hosting Service이고, 영리적 서비스와 오픈소스를 위한 비영리적 무상 서비스를 모두 제공한다.
+
+`코드 백업` 및 `버전 관리`, `협업`, `오픈소스 기여`, `포트폴리오로 활용`, `테스트, 배포 자동화` 등 개발자에게 필요한 다양한 기능을 제공하여 현재 [약 1억 5천만명의 개발자들이 이용하는 중](https://github.blog/news-insights/product-news/github-copilot-in-vscode-free/)이다.  
 
 ## 라이선스
 

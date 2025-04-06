@@ -27,6 +27,16 @@
 ### 1. VCS
 GitHub의 핵심 기능 중 하나인 VCS(Version Control System, 버전 관리 시스템)는 소스 코드의 변경 이력을 체계적으로 관리하고, 팀원 간의 협업을 원활하게 만들어주는 기능이다. GitHub는 Git을 기반으로 한 분산형 VCS를 활용하여 사용자들이 로컬에서 작업한 내용을 온라인 상의 원격 저장소(Remote Ropesitory)와 동기화하고 관리할 수 있게 한다.
 
+**VCS 예시**
+1. git clone https://github.com/사용자/프로젝트
+2. git checkout -b 새로운기능브랜치
+3. 코드 수정
+4. git add .
+5. git commit -m "feat: 새로운 기능 추가"
+6. git push origin 새로운기능브랜치
+7. GitHub에서 Pull Request 생성
+8. 리뷰 후 merge
+
 ### 2. Issue Management
 GitHub의 Issue Management 기능은 프로젝트 관리와 협업을 원활하게 해주기 위한 기능이다.  
 개발 중인 프로젝트의 새로운 기능을 제안하거나, 버그를 신고하는 등의 목적으로 사용되며. 이 때, 작업 단위로 개발 내용을 설명하고, 우선 순위를 정하고, 담당자를 지정하여 프로젝트의 개발 과정을 체계적으로 관리할 수 있다.

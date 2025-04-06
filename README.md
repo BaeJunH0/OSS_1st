@@ -14,6 +14,14 @@
 `코드 백업` 및 `버전 관리`, `협업`, `오픈소스 기여`, `포트폴리오로 활용`, `테스트, 배포 자동화` 등 개발자에게 필요한 다양한 기능을 제공하여 현재 [약 1억 5천만명의 개발자들이 이용하는 중](https://github.blog/news-insights/product-news/github-copilot-in-vscode-free/)이다.  
 
 ## 라이선스
+**Github** 는 기본적으로 무료 사용 가능하지만, 오픈소스는 아니며 `Microsoft가 소유한 플랫폼`이다.  
+
+| 요금제 | 가격 (월/인당) | 주요 대상 | 주요 기능 |
+| --- | --- | --- | --- |
+| **Free** | 무료 | 개인 사용자, 간단한 프로젝트 | - 무제한 공개/비공개 레포<br>- 커뮤니티 지원<br>- 기본 CI/CD (GitHub Actions) |
+| **Pro** | $4/월 | 개인 개발자 | - Free 플랜 +<br>- 고급 Insights (리포지토리 분석)<br>- GitHub Codespaces 사용량 증가 |
+| **Team** | $4/월/사용자 | 소규모 팀 | - Pro 플랜 +<br>- 팀 권한 설정 (role management)<br>- 코드 소유자(Code owners)<br>- 보안 정책 강화 |
+| **Enterprise** | $21/월/사용자 | 기업 고객 | - Team 플랜 +<br>- SAML/SSO<br>- 감사 로그<br>- 고급 보안 스캐닝 (Advanced Security)<br>- Enterprise Managed Users (EMU) |
 
 ## 주요 기능
 ### 1. VCS

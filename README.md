@@ -177,6 +177,13 @@ Copilot 실제 사용 예시
 실제로 Copilot을 사용할 때 가장 큰 장점은 ‘생각보다 빠르게 작동한다’는 것이다. 예를 들어 Python에서 def fibonacci(n):만 작성하면, Copilot은 즉시 재귀적으로 피보나치 수열을 구하는 함수를 자동으로 완성해준다. JavaScript에서 // remove duplicates from an array라는 주석을 입력하면, [...new Set(array)]같은 간단하고 효율적인 코드가 제안된다.
 이러한 기능은 초보 개발자에게는 학습용 코드 예제로, 숙련 개발자에게는 반복 작업 제거 및 코드 스캐폴딩 용도로 특히 유용하다. 프로젝트의 초반 구조를 빠르게 구성하거나, 알고리즘 구현의 초안을 만들고자 할 때도 빠른 도움을 받을 수 있다.
 
+```python
+def fibonacci(n):
+    if n <= 1:
+        return n
+    return fibonacci(n-1) + fibonacci(n-2)
+```
+
 
 
 
